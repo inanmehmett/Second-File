@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Başlıksız Belge</title>
+</head>
+
+<body>
+<p id="result"></p>
+	<input type="text" id="inn">
+<button type="button" onClick="show()">Hesapla</button>
+
+<script>
+function show(){
+	var take,i,faktr=1;
+	take=Number(document.getElementById('inn').value);
+	for(i=1;i<=take;i++){
+		faktr=faktr*i;
+		
+	}
+
+	document.getElementById("result").innerHTML=faktr;
+		   
+	}
+		
+
+
+</script>
+</body>
+</html>
